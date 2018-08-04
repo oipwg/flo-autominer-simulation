@@ -7,7 +7,7 @@
     "test": "NODE_PATH=node_modules node_modules/.bin/nyc node_modules/.bin/mocha $(find src -name '*tests.js')",
     "mocha": "NODE_PATH=node_modules node_modules/.bin/mocha $(find src -name '*tests.js')",
     "coverage": "NODE_PATH=node_modules node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
-    "buildDocs": "rm -r ./out; node_modules/.bin/jsdoc $(find src -name '*.js') ./README.md -d docs"
+    "buildDocs": "rm -r ./docs; node_modules/.bin/jsdoc $(find src -name '*.js') ./README.md -d docs"
   },
   "repository": {
     "type": "git",

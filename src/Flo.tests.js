@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect
 
-const FLO = require('./FLO')
+const FLO = require('./Flo')
 
 const configFLO = require('./configFLO')
 const configProtocol = require('./configProtocol')

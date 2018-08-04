@@ -8,6 +8,7 @@ This is the source code of simulation of the FLO environment with OIP autominer 
 ### Under construction notice
 
 This project is under construction and it is an experiment in building opensource projects from scratch.
+[Github repo](https://github.com/oipwg/flo-simulator)
 
 ## Documentation
 

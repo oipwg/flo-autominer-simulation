@@ -1,0 +1,31 @@
+{
+  "name": "flo-simulator",
+  "version": "0.0.1",
+  "description": "trying to simulate the autominer thingy",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_PATH=node_modules node_modules/.bin/nyc node_modules/.bin/mocha $(find src -name '*tests.js')",
+    "mocha": "NODE_PATH=node_modules node_modules/.bin/mocha $(find src -name '*tests.js')",
+    "coverage": "NODE_PATH=node_modules node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
+    "buildDocs": "rm -r ./out; node_modules/.bin/jsdoc $(find src -name '*.js') ./README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oipwg/flo-simulator.git"
+  },
+  "author": "Davi Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oipwg/flo-simulator/issues"
+  },
+  "homepage": "https://github.com/oipwg/flo-simulator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "eslinter": "^3.2.1",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}
